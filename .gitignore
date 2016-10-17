@@ -1,0 +1,25 @@
+*.py[cod]
+*.cpp
+#*#
+*~
+*.egg
+*.egg-info
+*.swp
+*.DS_Store
+*.so
+*.o
+*.out
+*.lock
+
+untracked
+# generated when including notebooks
+_nb_header.html
+pelican-plugins
+.ipynb_checkpoints/
+TODO.txt
+publishconf.py
+content/notebooks/
+cache/
+scratch/
+output/
+*.pid

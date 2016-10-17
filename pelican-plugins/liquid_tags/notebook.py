@@ -51,27 +51,30 @@ from functools import partial
 from .mdx_liquid_tags import LiquidTags
 
 import IPython
+import nbconvert
+from IPython import nbformat
+
 IPYTHON_VERSION = IPython.version_info[0]
 
 if not IPYTHON_VERSION >= 1:
     raise ValueError("IPython version 1.0+ required for notebook tag")
 
 try:
-    from IPython.nbconvert.filters.highlight import _pygments_highlight
+    from nbconvert.filters.highlight import _pygments_highlight
 except ImportError:
     # IPython < 2.0
-    from IPython.nbconvert.filters.highlight import _pygment_highlight as _pygments_highlight
+    from nbconvert.filters.highlight import _pygment_highlight as _pygments_highlight
 
 from pygments.formatters import HtmlFormatter
 
-from IPython.nbconvert.exporters import HTMLExporter
+from nbconvert.exporters import HTMLExporter
 from IPython.config import Config
 
 try:
-    from IPython.nbconvert.preprocessors import Preprocessor
+    from nbconvert.preprocessors import Preprocessor
 except ImportError:
     # IPython < 2.0
-    from IPython.nbconvert.transformers import Transformer as Preprocessor
+    from nbconvert.transformers import Transformer as Preprocessor
 
 from IPython.utils.traitlets import Integer
 from copy import deepcopy
@@ -141,6 +144,7 @@ init_mathjax = function() {
     if (window.MathJax) {
         // MathJax loaded
         MathJax.Hub.Config({
+            showMathMenu: false,
             tex2jax: {
                 inlineMath: [ ['$','$'], ["\\(","\\)"] ],
                 displayMath: [ ['$$','$$'], ["\\[","\\]"] ]

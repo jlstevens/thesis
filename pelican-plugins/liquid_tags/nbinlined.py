@@ -55,14 +55,16 @@ def nbinlined(preprocessor, tag, markup):
         nb_json = IPython.nbformat.reads(nb_text, as_version=4)
 
     try:
-        cell = nb_json['worksheets'][0]['cells'][cell_no]
+        # cell = nb_json['worksheets'][0]['cells'][cell_no]
+        cell = nb_json['cells'][cell_no]
+
     except:
         raise ValueError("Could not grab cell %d" % cell_no)
 
     if 'outputs' not in cell:
         raise ValueError("Cell %d lacks output" % cell_no)
 
-    html = cell['outputs'][0].get('html', None)
+    html = cell['outputs'][0]['data'].get('text/html', None)
     if html is None:
         raise ValueError("Cell %d lacks HTML output" % cell_no)
 

@@ -19,6 +19,7 @@ PLUGINS = ['summary',                # Allows breaks
            'liquid_tags.nbinlined',  # My own additional tag
            'pelican_dynamic']        # See https://github.com/wrobstory/pelican_dynamic.git
 
+STATIC_PATHS = ['.nojekyll']
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None

@@ -4,13 +4,13 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Jean-Luc Richard Stevens'
 SITENAME = u'Spatiotemporal properties of evoked neural response in the primary visual cortex'
-SITEURL = ''
 
+SITEURL = ''
+TIMEZONE = 'Europe/London'
+DEFAULT_LANG = u'en'
 PATH = 'content'
 
-TIMEZONE = 'Europe/London'
-
-DEFAULT_LANG = u'en'
+THEME='./pelican-mockingbird' # pelican-alchemy was considered
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None

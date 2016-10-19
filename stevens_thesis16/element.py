@@ -1,3 +1,4 @@
+import os
 import json
 import param
 import numpy as np
@@ -100,8 +101,9 @@ def capture_cmap_rgb(filename='../assets/sit_colorbar_clean.png'):
         cmap.append(colorsys.hsv_to_rgb(h,1,v))
     return cmap
 
+asset_path = os.path.join(os.path.split(os.path.realpath(__file__))[0], 'assets')
 
-def register_sit_cmap(filename='./assets/sit_cmap.json',
+def register_sit_cmap(filename=asset_path+'/sit_cmap.json',
                       name='sit_cmap', clip_dist=30):
     if filename.endswith('.json'):
         cmap = json.load(open(filename,'r'))

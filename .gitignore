@@ -1,3 +1,9 @@
 .DS_Store
 .pyc
 PhD_thesis/
+thesis.aux
+thesis.bbl
+thesis.blg
+thesis.log
+thesis.out
+thesis.toc

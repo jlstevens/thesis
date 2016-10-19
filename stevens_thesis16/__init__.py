@@ -1,7 +1,7 @@
 from element import SpatioTemporalResponse
 
 
-def examples(path='notebooks', verbose=False):
+def notebooks(path='notebooks', verbose=False):
     """
     Copies the notebooks to the supplied path.
     """

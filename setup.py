@@ -11,6 +11,7 @@ setup_args.update(dict(
     name='stevens_thesis16',
     version="1.0",
     description='',
+    install_requires = ['param', 'numpy', 'matplotlib', 'holoviews'],
     long_description=open('README.rst').read() if os.path.isfile('README.rst') else 'Consult README.rst',
     author= "jlstevens",
     author_email= "jstevens@continuum.io",

@@ -18,8 +18,13 @@ setup_args.update(dict(
     maintainer= "jlstevens",
     maintainer_email= "jlstevens@continuum.io",
     platforms=['Windows', 'Mac OS X', 'Linux'],
-    packages = ["stevens_thesis16", 'stevens_thesis16.notebooks'],
-    package_data={'stevens_thesis16.notebooks': ['*.ipynb']},
+    packages = ["stevens_thesis16",
+                'stevens_thesis16.notebooks',
+                'stevens_thesis16.assets.sit_curves'],
+    package_data={
+        'stevens_thesis16.notebooks': ['*.ipynb'],
+        'stevens_thesis16.assets.sit_curves': ['*.npz']
+    },
     provides = ["stevens_thesis16"],
 ))
 

@@ -19,6 +19,7 @@ setup_args.update(dict(
     maintainer_email= "jlstevens@continuum.io",
     platforms=['Windows', 'Mac OS X', 'Linux'],
     packages = ["stevens_thesis16"],
+    package_data={'notebooks': ['*.ipynb']},
     provides = ["stevens_thesis16"],
 ))
 

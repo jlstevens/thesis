@@ -1,7 +1,7 @@
 Title: Introduction
-Slug: Home
+Slug: index
 
-Introduction test page.
+Introduction
 
 <!--
 This website provides ...  reproducible Jupyter notebooks that were used to generate all non-diagramatic figures in thesis. It is structured into distinct notebooks .... The completed thesis document is available here and the LaTeX source is available publicly on GitHub at [jlstevens/thesis](https://github.com/jlstevens/thesis)
@@ -12,6 +12,6 @@ Topographica - The neural simulator used to run the models. </br>
 FeatureMapper - The measurement protocols used for analyzing the tuning properties of the simulated neurons. </br>
 HoloViews - The data exploration, analysis and visualization library used to generate the figures. </br>
 
+-->
 
 [Notebook1](NB1.html)
--->

@@ -10,7 +10,7 @@ setup_args = {}
 setup_args.update(dict(
     name='stevens_thesis16',
     version="1.0",
-    description='',
+    description="Package supporting PhD thesis: 'Spatiotemporal properties of evoked neural response in the primary visual cortex'",
     install_requires = ['param', 'numpy', 'matplotlib', 'holoviews'],
     long_description=open('README.rst').read() if os.path.isfile('README.rst') else 'Consult README.rst',
     author= "jlstevens",

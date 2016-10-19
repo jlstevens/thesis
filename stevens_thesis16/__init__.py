@@ -9,7 +9,7 @@ def examples(path='notebooks', verbose=False):
     import os, glob
     from shutil import copytree, ignore_patterns
 
-    candidates = [os.path.join(__path__[0], '../notebooks')]
+    candidates = [os.path.join(__path__[0], 'notebooks')]
 
     for source in candidates:
         if os.path.exists(source):

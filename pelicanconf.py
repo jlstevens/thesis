@@ -5,7 +5,7 @@ from __future__ import unicode_literals
 AUTHOR = u'Jean-Luc Richard Stevens'
 SITENAME = u'Spatiotemporal properties of evoked neural response in the primary visual cortex'
 
-SITEURL = ''
+SITEURL = 'http://jlstevens.github.io/thesis'
 TIMEZONE = 'Europe/London'
 DEFAULT_LANG = u'en'
 PATH = 'content'

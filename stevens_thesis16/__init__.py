@@ -1,5 +1,7 @@
 from element import SpatioTemporalResponse
+import os
 
+asset_path = os.path.join(os.path.split(os.path.realpath(__file__))[0], 'assets')
 
 def notebooks(path='notebooks', verbose=False):
     """

@@ -71,7 +71,10 @@ You can also view snapshots of these notebooks online:
 
 
 [<i>Background</i>](background.html) : Notebook containing all the figures used in Chapter 2. <br>
-[<i>A reproducible workflow for exploratory research</i>](reproducibility.html) : Notebook containing all the figures used in Chapter 3. <br>
+[<i>A reproducible workflow for exploratory research</i>](reproducibility.html) : Notebook containing all the figures used in Chapter 3.
+<br>
+[<i>Quantifying the dynamics of cortical development</i>](GCAL.html) : Notebook containing all the figures used in Chapter 5. <br>
+
 
 # Publications
 

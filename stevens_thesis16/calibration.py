@@ -9,6 +9,7 @@ import imagen
 
 from holoviews import Curve, HoloMap, Element, Spline, GridSpace, Image, Histogram, Points, NdOverlay
 
+asset_path = os.path.join(os.path.split(os.path.realpath(__file__))[0], 'assets')
 
 def Worgotter_PSTH(onset_ms=400, duration_ms=800, peak=1.0, peak_ms=430,
                    peak_relative=True, spline=True):
@@ -398,7 +399,6 @@ def nowak_distribution(path=asset_path+'/nowak-hists/nowak_histograms.pkl',
         return Points(zip(edges, frequencies), **kwargs)
 
 
-asset_path = os.path.join(os.path.split(os.path.realpath(__file__))[0], 'assets')
 def sit_spatiotemporal_traces(path=asset_path+'/sit_curves/', contrast=100):
     "Helper function to load the captured Sit curves"
     fname = os.path.join(path, 'c%s.npz' % contrast)

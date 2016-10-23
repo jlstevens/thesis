@@ -30,7 +30,7 @@ The BibTex record for this thesis is given by:
 </pre>
 
 
-# Software and Notebooks
+# Jupyter Notebooks
 
 The thesis presents four computational models, namely the SIRD, GCAL,
 CGCAL and TCAL models. The source code for the SIRD model is available
@@ -66,12 +66,12 @@ using in the directory containing the notebooks:
 topographica -n
 ```
 
-<!--
 
 You can also view snapshots of these notebooks online:
 
-[Background](background.html)
--->
+
+[<i>Background</i>](background.html) : Notebook containing all the figures used in Chapter 2. <br>
+[<i>A reproducible workflow for exploratory research</i>](reproducibility.html) : Notebook containing all the figures used in Chapter 3. <br>
 
 # Publications
 

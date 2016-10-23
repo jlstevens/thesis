@@ -357,7 +357,7 @@ class SyntheticProfiles(param.Parameterized):
 
 
 
-def nowak_distribution(path='./assets/nowak-hists/nowak_histograms.pkl',
+def nowak_distribution(path=asset_path+'/nowak-hists/nowak_histograms.pkl',
                        condition='mu_ON', scale=None, hist=True,
                        centering='range', extents=False, group='Nowak'):
     """
@@ -405,7 +405,7 @@ def sit_spatiotemporal_traces(path=asset_path+'/sit_curves/', contrast=100):
     return [Curve(data) for data in np.load(fname)['data']]
 
 
-def reynaud_spatiotemporal_traces(path='./assets/reynaud-curves/', contrast=80):
+def reynaud_spatiotemporal_traces(path=asset_path+'/reynaud-curves/', contrast=80):
     "Helper function to load the captured Reynauld curves (already interpolated)"
     fname = os.path.join(path, 'c%s.npz' % contrast)
     return [Curve(data) for data in np.load(fname)]
@@ -423,7 +423,7 @@ def interpolate(data, distance):
     return np.vstack([xvals, yinterp]).T
 
 
-def sit_traces(filename = './assets/sit-curves/raw_traces_c100.npz', interpolation=1, exclude=[]):
+def sit_traces(filename = asset_path+'/sit-curves/raw_traces_c100.npz', interpolation=1, exclude=[]):
     """
     Helper function to load Sit raw traces (Figure 2A).
     The interpolation argument (if not None) is the *approximate*

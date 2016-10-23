@@ -74,6 +74,7 @@ You can also view snapshots of these notebooks online:
 [<i>A reproducible workflow for exploratory research</i>](reproducibility.html) : Notebook containing all the figures used in Chapter 3.
 <br>
 [<i>Quantifying the dynamics of cortical development</i>](gcal.html) : Notebook containing all the figures used in Chapter 5. <br>
+[<i>Unifying developmental and evoked response dynamics</i>](tcal.html) : Notebook containing all the figures used in Chapter 6, linking to supplementary notebooks as necessary <br>
 
 
 # Publications

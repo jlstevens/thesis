@@ -15,8 +15,10 @@ available. Furthermore, this website is intended to serve as a
 reproducible record of all the work in this thesis with the LaTeX source
 code available [here](https://github.com/jlstevens/thesis). In addition,
 the Jupyter notebooks used to generate the non-diagramatic figures in
-the thesis document may be found HERE and may be viewed online using the
-links in the 'Notebooks' section below.
+the thesis document may be found
+[here](https://github.com/jlstevens/thesis/tree/pelican/content/notebooks)
+and may be viewed online using the links in the 'Notebooks' section
+below.
 
 The BibTex record for this thesis is given by:
 
